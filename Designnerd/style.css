@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy", sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(330, 19%, 92%);
+}
+
+.left {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.right {
+    width: 60%;
+    height: 100%;
+    /* background-color: rgb(255, 132, 0); */
+}
+
+.nav {
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navl {
+    display: flex;
+    align-items: center;
+}
+
+.navl a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.navl a i {
+    color: royalblue;
+}
+
+.left .textcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.textcenter h1 {
+    font-size: 90px;
+    font-weight: 900;
+
+}
+
+.textcenter p {
+    opacity: .6;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.textcenter a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+.rtop {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: pink;
+}
+
+.rbottom {
+    width: 100%;
+    height: 50%;
+    /* background-color: yellow; */
+    background-image: url(https://cdn.pixabay.com/photo/2020/07/24/16/37/cactus-5434469_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.rtopleft {
+    width: 55%;
+    height: 100%;
+    /* background-color: green; */
+    background-image: url(https://cdn.pixabay.com/photo/2023/04/10/15/07/cactus-7914007_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.rtopright {
+    width: 45%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/20/15/06/oranges-1995056_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 500px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main .left {
+        width: 100%;
+    }
+
+    .main .right {
+        width: 100%;
+    }
+}
