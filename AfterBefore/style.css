@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 50px;
-    font-family: gilroy, sans-serif;
 }
 
 html,
@@ -12,15 +10,147 @@ body {
     width: 100%;
 }
 
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    position: relative;
+    font-family: gilroy, sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2.5px solid black;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: 549;
+}
+
+.main h1 {
+    font-style: italic;
+    font-size: 40px;
+    font-family: monument-extended, sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    line-height: 70px;
+    color: rgb(18, 18, 18);
+    text-transform: uppercase;
+    z-index: 5;
+
+}
+
+.main .lowp {
+    font-style: italic;
+    position: absolute;
+    font-size: 40px;
+    font-family: monument-extended, sans-serif;
+    font-weight: 1000;
+    top: 10.2%;
+    left: 36%;
+    line-height: 70px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #131212;
+
+}
+
+.main p {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    transform: rotate(-10deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    background-color: springgreen;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: black;
+}
+
+.main .bottom {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: rotate(10deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    background-color: springgreen;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: black;
+}
+
+.main .center {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 40%;
+    height: 30%;
+}
+
+.center #one {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 94%;
+    height: 90%;
+    object-position: cover;
+}
+
+.center #two {
+    position: absolute;
+    top: -40%;
+    width: 30%;
+    height: 60%;
+    left: -10%;
+    transform: rotate(10deg);
+    z-index: 999;
+}
+
+.center #twol {
+    position: absolute;
+    border: 1px solid black;
+    top: -44%;
+    width: 30%;
+    height: 60%;
+    left: -11%;
+    transform: rotate(10deg);
+}
+
+
+
 button {
+    position: absolute;
+    left: 50%;
+    top: 90%;
     padding: 10px 20px;
     font-size: 20px;
     border: none;
     background-color: rgb(39, 183, 255);
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
