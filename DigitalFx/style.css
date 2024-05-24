@@ -125,7 +125,7 @@ body {
     width: 250px;
     height: 250px;
     position: absolute;
-    bottom: 0%;
+    bottom: 2%;
     right: 5%;
 }
 
@@ -135,4 +135,43 @@ body {
 
 .main img:hover {
     margin-top: -10px;
+}
+
+.main2 {
+    height: 70vh;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.main2 h5 {
+    font-size: 19px;
+    font-family: gilroy, sans-serif;
+    font-weight: 100;
+}
+
+.main2 h1 {
+    font-size: 49px;
+    width: 75%;
+    margin: 26px 0;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 100;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+
+}
+
+.about h4 {
+    font-size: 28px;
+    font-family: gilroy, sans-serif;
+    font-weight: 500;
 }
