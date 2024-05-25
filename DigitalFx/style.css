@@ -149,11 +149,25 @@ body {
     flex-direction: column;
 }
 
+.main2 h5::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 11%;
+    left: 28%;
+    background-color: springgreen;
+
+
+}
+
 .main2 h5 {
     font-size: 19px;
     font-family: gilroy, sans-serif;
     font-weight: 100;
 }
+
 
 .main2 h1 {
     font-size: 49px;
