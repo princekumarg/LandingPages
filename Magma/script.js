@@ -732,11 +732,11 @@ function canvas3() {
     return data.split("\n")[index];
   }
 
-  const frameCount = 136;
+  const frameCount = 75;
 
   const images = [];
   const imageSeq = {
-    frame: 1,
+    frame: 3,
   };
 
   for (let i = 0; i < frameCount; i++) {
@@ -750,10 +750,10 @@ function canvas3() {
     snap: "frame",
     ease: `none`,
     scrollTrigger: {
-      scrub: .5,
+      scrub: 2,
       trigger: `#page15>#left15`,
       start: `top top`,
-      end: `250% top`,
+      end: `1000% top`,
       scroller: `#main`,
     },
     onUpdate: render,
@@ -791,7 +791,7 @@ function canvas3() {
     pin: true,
     scroller: `#main`,
     start: `top top`,
-    end: `250% top`,
+    end: `1000% top`,
   });
 }
 canvas3()
