@@ -736,7 +736,7 @@ function canvas3() {
 
   const images = [];
   const imageSeq = {
-    frame: 3,
+    frame: 1,
   };
 
   for (let i = 0; i < frameCount; i++) {
@@ -750,10 +750,10 @@ function canvas3() {
     snap: "frame",
     ease: `none`,
     scrollTrigger: {
-      scrub: 2,
+      scrub: .1,
       trigger: `#page15>#left15`,
       start: `top top`,
-      end: `1000% top`,
+      end: `100% top`,
       scroller: `#main`,
     },
     onUpdate: render,
@@ -769,7 +769,7 @@ function canvas3() {
     var canvas = ctx.canvas;
     var hRatio = canvas.width / img.width;
     var vRatio = canvas.height / img.height;
-    var ratio = Math.max(hRatio, vRatio);
+    var ratio = Math.min(hRatio, vRatio);
     var centerShift_x = (canvas.width - img.width * ratio) / 2;
     var centerShift_y = (canvas.height - img.height * ratio) / 2;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -791,7 +791,7 @@ function canvas3() {
     pin: true,
     scroller: `#main`,
     start: `top top`,
-    end: `1000% top`,
+    end: `100% top`,
   });
 }
 canvas3()
@@ -808,6 +808,286 @@ document.querySelector("#page15>#right15>#right15con1>p").textContent.split("").
 gsap.to("#page15>#right15>#right15con1>p>span", {
   scrollTrigger: {
     trigger: `#page15>#right15>#right15con1>p>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con1>h1").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con1>h1").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con1>h1>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con1>h1>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con1>h4").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con1>h4").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con1>h4>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con1>h4>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con2>p").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con2>p").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con2>p>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con2>p>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con2>h1").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con2>h1").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con2>h1>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con2>h1>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con2>h4").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con2>h4").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con2>h4>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con2>h4>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con3>p").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con3>p").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con3>p>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con3>p>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con3>h1").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con3>h1").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con3>h1>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con3>h1>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con3>h4").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con3>h4").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con3>h4>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con3>h4>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con4>p").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con4>p").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con4>p>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con4>p>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con4>h1").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con4>h1").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con4>h1>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con4>h1>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con4>h4").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con4>h4").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con4>h4>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con4>h4>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con5>p").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con5>p").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con5>p>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con5>p>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con5>h1").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con5>h1").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con5>h1>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con5>h1>span`,
+    start: `top bottom`,
+    end: `bottom top`,
+    scroller: `#main`,
+    scrub: .5,
+  },
+  stagger: .2,
+  color: `#fff`
+})
+var clutter = "";
+
+document.querySelector("#page15>#right15>#right15con5>h4").textContent.split("").forEach(function (dets) {
+  clutter += `<span>${dets}</span>`
+
+  document.querySelector("#page15>#right15>#right15con5>h4").innerHTML = clutter;
+})
+
+
+gsap.to("#page15>#right15>#right15con5>h4>span", {
+  scrollTrigger: {
+    trigger: `#page15>#right15>#right15con5>h4>span`,
     start: `top bottom`,
     end: `bottom top`,
     scroller: `#main`,

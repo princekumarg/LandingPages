@@ -536,7 +536,7 @@ body {
     position: relative;
     height: 300vh;
     width: 100vw;
-    background-color: #0442ff;
+    background-color: #03268E;
     display: flex;
 }
 
@@ -580,18 +580,92 @@ body {
     color: #dadada69;
 }
 
+#page15 #right15 #right15con2 {
+    margin-bottom: 2vw;
+}
+
+#page15 #right15 #right15con2 p {
+    margin-bottom: 2vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con2 h1 {
+    margin-bottom: 2vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con2 h4 {
+    margin-bottom: 10vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con3 {
+    margin-bottom: 2vw;
+}
+
+#page15 #right15 #right15con3 p {
+    margin-bottom: 2vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con3 h1 {
+    margin-bottom: 2vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con3 h4 {
+    margin-bottom: 10vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con4 {
+    margin-bottom: 2vw;
+}
+
+#page15 #right15 #right15con4 p {
+    margin-bottom: 2vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con4 h1 {
+    margin-bottom: 2vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con4 h4 {
+    margin-bottom: 10vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con5 {
+    margin-bottom: 2vw;
+}
+
+#page15 #right15 #right15con5 p {
+    margin-bottom: 2vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con5 h1 {
+    margin-bottom: 2vw;
+    color: #dadada69;
+}
+
+#page15 #right15 #right15con5 h4 {
+    margin-bottom: 10vw;
+    color: #dadada69;
+}
+
 #page15 #left15 {
-    position: absolute;
+    position: relative;
     width: 40%;
-    top: 50%;
-    right: 7%;
 }
 
 #page15 #left15>canvas {
     position: fixed;
-    height: 300px;
-    top: 3%;
-    right: 5%;
-    max-width: 30vw;
-    max-height: 80vh;
+    top: 10%;
+    left: 120%;
+    max-width: 60vw;
+    max-height: 100vh;
+    overflow: hidden;
 }
