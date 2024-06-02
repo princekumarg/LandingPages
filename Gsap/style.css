@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background: #eceff1;
+}
+
+.section1,
+.section2,
+.section3 {
+    width: 100%;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.section2 {
+    overflow: hidden;
+}
+
+.section2 h1 {
+    font-size: 3rem;
+    line-height: 42px;
+    padding-bottom: 2rem;
+    color: #1f1f1f;
+}
+
+.content {
+    max-width: 40ch;
+    padding: 3rem;
+    flex-grow: 1;
+}
+
+.images {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    -webkit-mask: linear-gradient(transparent, white 10%, white 85%, transparent);
+    mask: linear-gradient(transparent, white 10%, white 85%, transparent);
+}
+
+.images .left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.img {
+    width: 14rem;
+    height: 22rem;
+    border-radius: 16px;
+}
+
+.right {
+    margin-top: 40rem;
+}
+
+.right .img:nth-child(1) {
+    background-image: url("https://images.unsplash.com/photo-1682687220801-eef408f95d71?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right .img:nth-child(2) {
+    background-image: url("https://images.unsplash.com/photo-1694111356884-45781a164220?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right .img:nth-child(3) {
+    background-image: url("https://images.unsplash.com/photo-1699302150582-bffc5309a8c8?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right .img:nth-child(4) {
+    background-image: url("https://images.unsplash.com/photo-1699190459864-173c0552757d?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right .img:nth-child(5) {
+    background-image: url("https://images.unsplash.com/photo-1691513218992-a8ee49db259a?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.left .img:nth-child(1) {
+    background-image: url("https://images.unsplash.com/photo-1691418173358-492743391cf5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left .img:nth-child(2) {
+    background-image: url("https://images.unsplash.com/photo-1694734479899-cdcf2c1bcf0f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left .img:nth-child(3) {
+    background-image: url("https://images.unsplash.com/photo-1695068546554-b12820bc827d?q=80&w=1494&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left .img:nth-child(4) {
+    background-image: url("https://plus.unsplash.com/premium_photo-1691122958941-bc4035670842?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left .img:nth-child(5) {
+    background-image: url("https://images.unsplash.com/photo-1696418800218-6f3bb0975d3b?q=80&w=1386&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 6px 10px 10px 10px;
+    border-bottom-right-radius: 26px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    will-change: transform;
+}
