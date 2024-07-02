@@ -177,6 +177,79 @@ img {
 
 
 /*=============== HOME ===============*/
+.home {
+  position: relative;
+}
+
+.home__container {
+  padding-top: 8rem;
+  height: 100vh;
+}
+
+.home__content {
+  position: relative;
+  z-index: 2;
+}
+
+.home__data {
+  display: grid;
+  row-gap: .5rem;
+}
+
+.home__subtitle {
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  letter-spacing: 3px;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  color: var(--title-color);
+}
+
+.home__description {
+  margin-bottom: 2.5rem;
+}
+
+.home__button {
+  display: inline-block;
+  background: var(--gradient-color);
+  color: var(--white-color);
+  width: max-content;
+  padding: 1rem 2rem;
+  border-radius: .75rem;
+  box-shadow: 0 24px 32px hsla(210, 54%, 24%, .3);
+}
+
+.home__bird-1,
+.home__bird-2 {
+  position: absolute;
+  width: 60px;
+}
+
+.home__bird-1 {
+  bottom: -6rem;
+  rotate: -30deg;
+}
+
+.home__bird-2 {
+  top: 4.5rem;
+  rotate: -15deg;
+  right: 0;
+}
+
+.home__images {
+  z-index: 1;
+}
+
+.home__images img {
+  position: absolute;
+  max-width: initial;
+  width: 600px;
+  left: -7rem;
+  bottom: 0;
+}
 
 
 /*=============== BREAKPOINTS ===============*/
